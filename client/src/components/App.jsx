@@ -37,7 +37,7 @@ const App = ({app}) => {
 			</a>
 			<div className="app-info">
 				<a href={app.link}>
-					<div className="app-name">{app.name} <span className="text-fade"></span></div>
+					<div className="app-name" title={app.name}>{app.name} <span className="text-fade"></span></div>
 				</a>
 				<div className="app-detail">{app.category === "Social Networking" ? "Social Network" : app.category} | Rank: {app.rank}</div>
 			</div>

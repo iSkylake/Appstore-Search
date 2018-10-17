@@ -6,8 +6,8 @@ const SortBtn = props => {
 
 	return(
 		<div className="sort-wrap">
-			<button className="btn-sort" onClick={ handleClick } value="desc">&darr;</button>
-			<button className="btn-sort" onClick={ handleClick } value="asc">&uarr;</button>
+			<button className="btn-sort" onClick={ handleClick } value="desc" title="Descendant Sort">&darr;</button>
+			<button className="btn-sort" onClick={ handleClick } value="asc" title="Ascendant Sort">&uarr;</button>
 		</div>
 	)
 }

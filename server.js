@@ -1,5 +1,6 @@
 const express = require('express');
-const methodOverride = require('method-overrdie');
+const path = require('path');
+const methodOverride = require('method-override');
 const algoliasearch = require('algoliasearch');
 
 const app = express();
@@ -8,7 +9,7 @@ const port = process.env.PORT || 5000;
 app.use(methodOverride('_method'));
 
 // API
-const client = algoliasearch('BK57KIK2XC', apiAdminKey); // ENV Variable
+const client = algoliasearch('BK57KIK2XC', process.env.apiAdminKey); // ENV Variable
 const index = client.initIndex('apps');
 
 // Routes
