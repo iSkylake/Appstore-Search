@@ -1,0 +1,17 @@
+{
+  "name": "appstore-search",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "algoliasearch": "^3.30.0",
+    "algoliasearch-helper": "^2.26.1",
+    "inferno": "^5.6.1",
+    "inferno-scripts": "6.3.2"
+  },
+  "scripts": {
+    "start": "inferno-scripts start",
+    "build": "inferno-scripts build",
+    "test": "inferno-scripts test --env=jsdom",
+    "eject": "inferno-scripts eject"
+  }
+}
