@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "algoliasearch": "^3.30.0",
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "method-override": "^3.0.0",
     "nodemon": "^1.18.4"
