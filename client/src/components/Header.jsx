@@ -3,24 +3,11 @@ import SortBtn from './SortBtn';
 import SearchInput from './SearchInput';
 
 const Header = props => {
-
-	const handleSearch = appName => {
-		props.onHandleSearch(appName);
-	}
-
-	const handleSelect = category => {
-		props.onHandleSelect(category);
-	}
-
-	const handleSort = sort => {
-		props.onHandleSort(sort);
-	}
-
 	return(
 		<div className="search-wrap">
-			<CategoryDropDown onHandleSelect={ handleSelect } />
-			<SearchInput onHandleSearch={ handleSearch } />
-			<SortBtn onHandleSort={ handleSort } />
+			<CategoryDropDown onHandleSelect={ category => props.onHandleSelect(category) } />
+			<SearchInput onHandleSearch={ appName => props.onHandleSearch(appName) } />
+			<SortBtn onHandleSort={ sort => props.onHandleSort(sort) } />
 		</div>
 	)
 }
