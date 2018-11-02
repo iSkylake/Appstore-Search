@@ -12,4 +12,4 @@ Install all modules using the command `npm install && cd client && npm install &
 
 To run development server and start the web app use `npm run dev` command line.
 
-Replace **process.env.apiAdminKey** with Algolia **Admin API Key** in *routes/app.js* to use POST and DELETE APIs.
+Replace **process.env.apiAdminKey** with Algolia **Admin API Key** in *controllers/app.js* to use POST and DELETE APIs.
